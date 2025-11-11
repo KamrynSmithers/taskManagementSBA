@@ -11,39 +11,60 @@
 
 
 <form>
-    <div class="yaName">
-    <label for = "name">Task: </label>
-   <input type="text" name="name" id="name"> <br>
-</div>
-<button class="add">Add New Task!</button>
+
+<!--<button type="button" id="remove">Remove Last Task</button>-->
+
 
 <div class="categoryy">
 <label for ="cat">Category:</label>
 <select  id="cat" name = "cat">
-    <option value="cat1">Nate Jackson</option>
-    <option value="cat2">Comedian CP</option>
-    <option value="cat3">Def Comedy Jam Participants </option>
-</div>
+    <option value="Nate Jackson">Nate Jackson</option>
+    <option value="Comedian CP">Comedian CP</option>
+    <option value="Def Comedy Jam Participants">Def Comedy Jam Participants </option>
 </select><br>
-
+</div>
 
 <div class="deadline-section">
-<label for="dLine">Choose Your Deadline</label>
+<label for="dLine">Choose Your Deadline:</label>
    <input type="date" name="dLine" id="dLine"> <br>
 </div>
 
 
-   <!--<input type="text" name="status" id="status"> <br>-->
-<div class="dropdown2">
-<select name="stca">
-    <option>Status</option>
-    <option>Category</option>
-</select>
-</div>
 
 </form>
 
 
+    <section class="yaName">
+    <label for = "nname">Task: </label>
+   <input type="text" id="nname" placeholder="Enter a New Task"/> <br>
+    </section>
+<button type="button" id="add">Add New Task!</button>
+
+
+
+
+<div class="back4buttons">
+<section id="filter-buttons">
+   <button type="button" class="filButn active" data-filter="all">Show All</button>
+  <button type="button" class="filButn" data-filter="Nate Jackson">Nate Jackson</button>
+  <button type="button" class="filButn" data-filter="Comedian CP">Comedian CP</button>
+  <button type="button" class="filButn" data-filter="Def Comedy Jam Participants">Def Comedy Jam</button>
+  <button type="button" class="filButn" data-filter="Not started">Not Started</button>
+  <button type="button" class="filButn" data-filter="In Progress">In Progress</button>
+  <button type="button" class="filButn" data-filter="Completed">Completed</button> 
+</section><br>
+<section id="message"></section>
+</div>
+<section class="display-area">
+
+
+    <!--USE THIS TO EDIT YOUR TASK. JUST CLICK ON THE TASK YOU WANT TO EDIT-->
+<ul id="taskList" contenteditable="true">
+
+<ul id="taskList">
+
+</ul>
+</section>
 
 </body>
 </html>
